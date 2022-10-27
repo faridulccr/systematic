@@ -1,0 +1,110 @@
+@media only screen and (max-width: 575px) {
+    /********************************
+    header css style for mobile
+    *********************************/
+    #header .top-header {
+        display: block;
+    }
+    .top-header .search-bar {
+        margin-top: 10px;
+        justify-content: center;
+    }
+    .top-header .header-items ul {
+        justify-content: center;
+    }
+    .top-header .header-items ul li a {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 485px) {
+    .main-header .logo-area {
+        display: block;
+        padding: 10px 0;
+    }
+    .main-header .logo-area .logo {
+        text-align: center;
+    }
+    .logo-area h1 {
+        font-size: 34px;
+    }
+    .logo-area h1 .letter-S {
+        font-size: 40px;
+    }
+    .logo-area .linkable-icon {
+        justify-content: center;
+        margin-top: 15px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    /************* nav area ****************/
+    .nav-menu {
+        display: block;
+    }
+    .main-header .nav-area {
+        width: fit-content;
+        padding: 0;
+        position: absolute;
+        top: 10px;
+        left: 60px;
+        z-index: 1000;
+        display: none;
+    }
+    .nav-area nav > ul {
+        display: block;
+    }
+    .nav-area nav > ul > li {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        border-bottom: 1px solid #666;
+    }
+    .dropdown1 .dropdown1-list {
+        width: 100%;
+        left: 40%;
+    }
+    .dropdown2 .dropdown2-list {
+        top: 90%;
+        left: -50%;
+    }
+    .dropdown2-list > li:nth-of-type(2n + 1) {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .dropdown2-list > li:nth-of-type(2n + 2) {
+        background-color: #666;
+    }
+    /********************************************************
+        intro-area style starts from here
+    *********************************************************/
+    #main .intro-area {
+        display: block;
+    }
+    .intro-area .big-title {
+        padding-left: 0;
+    }
+    /********************************************************
+        content-area style starts from here
+    *********************************************************/
+    #main .content-area {
+        display: block;
+        padding: 30px 2%;
+    }
+    .about,
+    .services {
+        margin-bottom: 30px;
+    }
+    .content-area .content-title {
+        margin-bottom: 30px;
+    }
+
+    /********************************************************
+        footer-area style starts from here
+    *********************************************************/
+    #footer-sec {
+        display: block;
+    }
+    .blog-posts {
+        margin-top: 30px;
+    }
+}

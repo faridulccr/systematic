@@ -1,0 +1,517 @@
+/********************************************************
+    Common Style 
+ ********************************************************/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+header,
+main,
+footer {
+    background-color: rgb(80, 70, 70);
+    color: rgb(102, 102, 102);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+.container {
+    max-width: 1000px;
+    min-width: 260px;
+    width: 100%;
+    margin: 0 auto;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+ul li {
+    list-style-type: none;
+}
+.read-more-span {
+    display: block;
+    text-align: right;
+}
+
+/********************************************************
+    Top Header style starts from here
+********************************************************/
+#header .top-header {
+    background-color: rgb(186, 46, 31);
+    padding: 13px 2%;
+    display: flex;
+}
+.top-header .header-items ul li {
+    padding: 0 7px;
+    position: relative;
+}
+.header-items ul li::after {
+    content: "";
+    width: 1px;
+    height: 14px;
+    background-color: #fff;
+    position: absolute;
+    top: 5px;
+    right: 0;
+}
+.header-items ul li:first-child {
+    padding-left: 0;
+}
+.header-items ul li:last-child::after {
+    display: none;
+}
+
+/************ search input style ***************/
+.top-header .search-bar {
+    flex: content;
+    display: flex;
+    justify-content: right;
+}
+.search-bar form {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    max-width: 210px;
+    width: 100%;
+    height: 25px;
+    padding: 0 4px 0 6px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+.search-bar form input {
+    width: auto;
+    height: 24px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-right: 3px;
+}
+.search-bar form button {
+    border: none;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    background-color: rgb(186, 46, 31);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.search-bar form button:hover {
+    background-color: #333333;
+}
+
+/********************************************************
+    Main Header style starts from here
+*********************************************************/
+#header .main-header {
+    background-color: #fff;
+    padding: 0 2% 25px;
+}
+.main-header .logo-area {
+    display: flex;
+    padding: 40px 0;
+}
+.logo-area h1 {
+    font-size: 36px;
+    line-height: 1;
+    color: #000;
+    font-weight: 500;
+}
+.logo-area h1 .letter-S {
+    font-size: 46px;
+}
+.logo-area h5 {
+    font-size: 12px;
+    color: #000;
+    line-height: 1;
+    font-weight: 300;
+}
+
+/**************** linkable-icons style starts form here ***********/
+.logo-area .linkable-icon {
+    flex: content;
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+}
+.linkable-icon ul li a i {
+    width: 35px;
+    height: 35px;
+    background-color: #333333;
+    margin: 0 5px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+}
+.linkable-icon ul li:last-child a i {
+    margin-right: 0;
+}
+
+/********** linkable-icon hover effect styles **************/
+.linkable-icon ul li:last-child a i:hover {
+    background-color: #ba2e1f;
+}
+.linkable-icon ul li a i.fa-linkedin:hover {
+    background-color: #0174b0;
+}
+.linkable-icon ul li a i.fa-twitter:hover {
+    background-color: #41b7e5;
+}
+.linkable-icon ul li a i.fa-pinterest:hover {
+    background-color: #de2a32;
+}
+.linkable-icon ul li a i.fa-google-plus:hover {
+    background-color: #d64134;
+}
+.linkable-icon ul li a i.fa-rss:hover {
+    background-color: #ee802f;
+}
+
+/*************************************************
+    Navigation menu styles starts from here
+*************************************************/
+.nav-menu {
+    padding: 10px 0 10px 5px;
+    background-color: black;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 600;
+    display: none;
+}
+.nav-menu span:hover {
+    cursor: pointer;
+    color: rgb(186, 46, 31);
+}
+.main-header .nav-area {
+    background-color: #333333;
+    border-radius: 5px;
+    padding: 15px 30px;
+    display: block;
+}
+.nav-area nav > ul > li {
+    font-size: 12px;
+    padding: 0 15px;
+}
+.nav-area nav ul li a:hover {
+    color: #ba2e1f;
+    transition: 0.3s ease-in-out;
+}
+
+/*************** Dropdown styles *****************/
+.dropdown1,
+.dropdown2 {
+    position: relative;
+}
+.dropdown1 .dropdown1-list {
+    display: none;
+    background-color: #333333;
+    width: 130%;
+    position: absolute;
+    top: 102%;
+    left: 5%;
+}
+
+.dropdown2 .dropdown2-list {
+    display: none;
+    background-color: #333;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+.dropdown1-list a {
+    font-size: 12px;
+    display: block;
+    padding: 12px 0;
+    text-align: center;
+}
+
+.dropdown1-list > li:nth-of-type(2n + 1),
+.dropdown2-list > li:nth-of-type(2n + 2) {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+li.dropdown1:hover > a {
+    color: #ba2e1f;
+}
+li.dropdown2:hover > a {
+    color: #ba2e1f;
+}
+
+/***************** show dropdown ****************/
+.dropdown1:hover .dropdown1-list {
+    display: block;
+}
+.dropdown2:hover .dropdown2-list {
+    display: block;
+}
+
+/********************************************************
+    intro-area style starts from here
+*********************************************************/
+#main .intro-area {
+    background-color: #fff;
+    padding: 0 2%;
+    display: grid;
+    grid-template-columns: 40% auto;
+    align-items: center;
+}
+.intro-area img {
+    width: 100%;
+    max-height: 440px;
+}
+.intro-area .big-title {
+    padding-left: 50px;
+}
+.big-title h1 {
+    font-size: 4rem;
+    line-height: 1.1;
+    font-weight: 500;
+    color: #000;
+}
+.big-title p {
+    padding: 10px 0;
+    font-size: 16px;
+    color: #666;
+}
+#main span a,
+#footer span a {
+    color: #ba2e1f;
+    font-weight: 300;
+}
+.intro-area .big-title span a {
+    font-size: 16px;
+}
+
+/********************************************************
+    content-area style starts from here
+*********************************************************/
+#main .content-area {
+    background-color: #f2f2f2;
+    padding: 50px 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+}
+.content-area span a {
+    font-size: 13px;
+    display: inline-block;
+    padding-top: 10px;
+}
+.content-area .content-title {
+    font-size: 26px;
+    font-weight: 500;
+    color: #333333;
+    line-height: 1;
+    margin-bottom: 50px;
+}
+.content-area p {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.8;
+}
+/*************** about area style *****************/
+.content-area .about img {
+    width: 100%;
+    height: auto;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 4px;
+}
+.content-area .about p:nth-of-type(1) {
+    margin-bottom: 18px;
+}
+/*************** service area style *****************/
+.content-area .services .service-card {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 18px;
+    margin-bottom: 30px;
+}
+.services .service-card:nth-of-type(4) {
+    margin-bottom: 0;
+}
+.services .service-card img {
+    width: 64px;
+    height: 69px;
+}
+.service-card .text h3 {
+    font-size: 14px;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+/*************** cleints area style *****************/
+.content-area .clients .title {
+    display: flex;
+    align-items: center;
+}
+.clients .title span:nth-of-type(1) {
+    color: #d4d4d4;
+    height: 55px;
+    font-size: 60px;
+    line-height: 1;
+}
+.clients .title h4 {
+    font-size: 16px;
+    color: #989898;
+    margin-left: 10px;
+}
+.clients .title span:nth-of-type(2) {
+    color: #989898;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+/********************************************************
+    Footer-sec style starts from here
+*********************************************************/
+#footer-sec {
+    background-color: #fff;
+    padding: 30px 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 30px;
+}
+.top-border {
+    border-top: 1px solid black;
+    padding-top: 18px;
+}
+#footer-sec a {
+    color: rgb(186, 46, 31);
+}
+#footer-sec p {
+    font-size: 12px;
+    font-weight: 300;
+}
+#footer-sec div h4 {
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 500;
+    color: #666;
+    margin-bottom: 30px;
+}
+/************ tweets area style *************/
+.tweets .tweets-container .date {
+    font-size: 12px;
+    display: block;
+    color: black;
+}
+.tweets .tweets-container .posted-tweet {
+    margin-bottom: 25px;
+}
+/************* Links area style **************/
+.links .links-container ul {
+    display: block;
+}
+.links .links-container ul li {
+    padding: 6px 0;
+    line-height: 1;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+.links .links-container ul li:nth-of-type(1) {
+    /* padding-top: 0; */
+    margin-top: -6px;
+}
+.links .links-container ul li a {
+    font-size: 12px;
+}
+.links .links-container ul li:hover {
+    background-color: #f2f2f2;
+}
+/************* blog post area style ****************/
+.blog-posts .blog-container .post {
+    margin-bottom: 22px;
+}
+.blog-container .post h5 {
+    font-size: 14px;
+    color: #666;
+}
+.blog-container .post .admin {
+    font-size: 10px;
+}
+.blog-container .post .date {
+    font-size: 10px;
+    color: black;
+}
+.blog-container .post p {
+    margin: 10px 0 6px;
+}
+.blog-container .post span {
+    display: block;
+    font-size: 12px;
+    text-align: right;
+}
+/************* contact area style ****************/
+.contact form input,
+form textarea {
+    width: 100%;
+    height: 32px;
+    background-color: #f2f2f2;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    color: #989898;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+form textarea {
+    resize: none;
+    height: 110px;
+    margin-bottom: 4px;
+}
+.contact form input[type="submit"] {
+    width: 80px;
+    color: rgb(186, 46, 31);
+    margin-left: 10px;
+}
+.contact form input[type="reset"] {
+    width: 80px;
+    color: rgb(186, 46, 31);
+}
+.contact form input[type="submit"]:hover,
+.contact form input[type="reset"]:hover {
+    background-color: #333;
+    cursor: pointer;
+}
+
+/*********** copyright style starts from here *************/
+#copyright-sec {
+    background-color: #f2f2f2;
+    padding: 23px 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#copyright-sec p {
+    font-size: 12px;
+}
+#copyright-sec p:nth-of-type(2) {
+    text-align: right;
+}
+@media only screen and (max-width: 615px) {
+    #copyright-sec {
+        display: block;
+    }
+    #copyright-sec p:nth-of-type(1) {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    #copyright-sec p:nth-of-type(2) {
+        text-align: center;
+    }
+}
