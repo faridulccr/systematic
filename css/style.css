@@ -82,9 +82,9 @@ ul li {
     justify-content: right;
     align-items: center;
     width: 210px;
-    height: 25px;
+    height: 27px;
     padding: 0 4px 0 6px;
-    background-color: #fff;
+/*     background-color: #fff; */
     border-radius: 20px;
 }
 .search-bar form input {
